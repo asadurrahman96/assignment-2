@@ -38,8 +38,30 @@
 .common-para{
     color:rgba(0, 0, 0, 0.5);
 }
+
+.add-cart{
+    width: 270px;
+    height: 50px;
+    background-color: #E95A08;
+    color:#FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+
+}
+.card-para{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.card-price{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #111111;
+    margin-top: 0px;
+}
+
 /* Banner-section Style */
-.nav-section, .banner-section{
+.nav-section, .banner-section, .card-container{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -66,10 +88,33 @@
 /* .banner-img{
     width: 100%;
 } */
+
+/* Card style */
+.card-heading{
+    text-align: center;
+}
+.card-headline{
+    font-weight: bold;
+    font-size: 3.1rem;
+    margin-bottom: 5px;
+}
+.card-info{
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 240px;
+    height: 50px; */
+}
 /* Media Query */
 @media screen and (max-width:576px){
     .navbar,.nav-links,.banner-section{
         flex-direction: column;
     }
-    
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
